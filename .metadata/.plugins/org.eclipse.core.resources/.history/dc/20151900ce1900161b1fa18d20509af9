@@ -1,0 +1,9 @@
+package com.orangrehrm.baseclass;
+
+import org.openqa.selenium.WebDriver;
+
+public class Constants {
+	
+	WebDriver driver=null;
+
+}

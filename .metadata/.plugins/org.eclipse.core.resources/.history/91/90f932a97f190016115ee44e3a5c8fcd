@@ -1,0 +1,17 @@
+package day29.junit;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import org.junit.runners.Suite.SuiteClasses;
+
+
+@RunWith(Suite.class)
+@SuiteClasses({Login.class,
+	           FindAFlight.class,
+	           SelectaFlight.class,
+	           BookAFlight.class,
+	           FlightConfirmation.class})
+
+public class JunitTestSuite {
+
+}

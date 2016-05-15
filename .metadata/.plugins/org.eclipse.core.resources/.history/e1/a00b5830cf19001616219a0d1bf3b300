@@ -1,0 +1,10 @@
+package com.orangrehrm.baseclass;
+
+public class AddEmployee  extends Constants{
+	@Test
+	public void addEmpTest()
+	{
+		
+	}
+
+}

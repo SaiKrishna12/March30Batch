@@ -1,0 +1,7 @@
+Feature: Login and logour functionality of OrangeHRM
+
+Scenario: Verify the login functionality
+	Given the browser is launched and we navigate to orangehrm
+	When we enter the username and password
+	And click on the login button
+	Then it should display welcome admin msg

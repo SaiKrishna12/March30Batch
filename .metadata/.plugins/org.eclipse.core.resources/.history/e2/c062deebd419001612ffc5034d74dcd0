@@ -1,0 +1,14 @@
+package com.orangrehrm.baseclass;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+public class TakingScreenshot extends Constants{
+	@Test
+	public void screenshotTest() throws IOException
+	{
+		scr.captureScreenshot(driver,location,"addEmp.png");
+	}
+
+}

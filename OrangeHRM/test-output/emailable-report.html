@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">On Chrome</a></td><td class="num">2</td><td class="num attn">2</td><td class="num">0</td><td class="num">41,107</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t1">On Firefox</a></td><td class="num">0</td><td class="num attn">2</td><td class="num attn">2</td><td class="num">55,900</td><td></td><td></td></tr><tr><th>Total</th><th class="num">2</th><th class="num attn">4</th><th class="num attn">2</th><th class="num">97,007</th><th colspan="2"></th></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">On Chrome &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.orangrehrm.baseclass.AddEmployee</td><td><a href="#m0">addEmpTest</a></td><td rowspan="1">1463233226613</td><td rowspan="1">559</td></tr><tr class="skippedodd"><td rowspan="1">com.orangrehrm.baseclass.TakingScreenshot</td><td><a href="#m1">screenshotTest</a></td><td rowspan="1">1463233227190</td><td rowspan="1">203</td></tr><tr><th colspan="4">On Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.orangrehrm.baseclass.Login</td><td><a href="#m2">loginTest</a></td><td rowspan="1">1463233202102</td><td rowspan="1">24493</td></tr><tr class="passedodd"><td rowspan="1">com.orangrehrm.baseclass.Logout</td><td><a href="#m3">logoutTest</a></td><td rowspan="1">1463233227408</td><td rowspan="1">15728</td></tr></tbody><tbody id="t1"><tr><th colspan="4">On Firefox &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.orangrehrm.baseclass.Login</td><td><a href="#m4">loginTest</a></td><td rowspan="1">1463233202102</td><td rowspan="1">48043</td></tr><tr class="failedodd"><td rowspan="1">com.orangrehrm.baseclass.Logout</td><td><a href="#m5">logoutTest</a></td><td rowspan="1">1463233250699</td><td rowspan="1">7234</td></tr><tr><th colspan="4">On Firefox &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.orangrehrm.baseclass.AddEmployee</td><td><a href="#m6">addEmpTest</a></td><td rowspan="1">1463233250187</td><td rowspan="1">375</td></tr><tr class="skippedodd"><td rowspan="1">com.orangrehrm.baseclass.TakingScreenshot</td><td><a href="#m7">screenshotTest</a></td><td rowspan="1">1463233250572</td><td rowspan="1">112</td></tr></tbody></table><h2>On Chrome</h2><h3 id="m0">com.orangrehrm.baseclass.AddEmployee#addEmpTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: AddEmp Testcase skipped
+	at com.orangrehrm.baseclass.AddEmployee.addEmpTest(AddEmployee.java:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.orangrehrm.baseclass.TakingScreenshot#screenshotTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Screenshot Testcase skipped
+	at com.orangrehrm.baseclass.TakingScreenshot.screenshotTest(TakingScreenshot.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.orangrehrm.baseclass.Login#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.orangrehrm.baseclass.Logout#logoutTest</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>On Firefox</h2><h3 id="m4">com.orangrehrm.baseclass.Login#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>firefox</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Unable to bind to locking port 7054 within 45000 ms
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: FirefoxDriver
+Command duration or timeout: 45.87 seconds
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:247)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:129)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:156)
+	at com.orangrehrm.baseclass.Login.loginTest(Login.java:40)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: Unable to bind to locking port 7054 within 45000 ms
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: FirefoxDriver
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd&apos;, time: &apos;2015-10-09 19:59:12&apos;
+System info: host: &apos;Sai-PC&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.internal.SocketLock.lock(SocketLock.java:99)
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:90)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:117)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:218)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:211)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:129)
+	at org.openqa.selenium.remote.server.FirefoxDriverProvider.callConstructor(FirefoxDriverProvider.java:91)
+	at org.openqa.selenium.remote.server.FirefoxDriverProvider.newInstance(FirefoxDriverProvider.java:68)
+	at org.openqa.selenium.remote.server.DefaultDriverFactory.newInstance(DefaultDriverFactory.java:60)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:222)
+	at org.openqa.selenium.remote.server.DefaultSession$BrowserCreator.call(DefaultSession.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	... 3 more
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.orangrehrm.baseclass.Logout#logoutTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at atu.testrecorder.ATUTestRecorder.stop(ATUTestRecorder.java:462)
+	at com.orangrehrm.baseclass.Logout.logoutTest(Logout.java:30)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.orangrehrm.baseclass.AddEmployee#addEmpTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: AddEmp Testcase skipped
+	at com.orangrehrm.baseclass.AddEmployee.addEmpTest(AddEmployee.java:28)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.orangrehrm.baseclass.TakingScreenshot#screenshotTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Screenshot Testcase skipped
+	at com.orangrehrm.baseclass.TakingScreenshot.screenshotTest(TakingScreenshot.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

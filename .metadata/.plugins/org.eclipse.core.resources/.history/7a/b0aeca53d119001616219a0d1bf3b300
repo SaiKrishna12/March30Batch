@@ -1,0 +1,34 @@
+package com.orangrehrm.baseclass;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import com.orangrehrm.pageclasses.AddEmployeePage;
+import com.orangrehrm.pageclasses.Menu;
+
+public class AddEmployee  extends Constants{
+	@Test
+	public void addEmpTest() throws IOException
+	{
+		FileInputStream file=new FileInputStream("E:\\March30Batch\\OrangeHRM\\src\\com\\orangrehrm\\excelfiles\\EmployeeList.xlsx");
+		XSSFWorkbook wb=new XSSFWorkbook(file);
+		XSSFSheet ws=wb.getSheetAt(0);
+		int rowCount=ws.getLastRowNum();
+		Menu menu=PageFactory.initElements(driver,Menu.class);
+		AddEmployeePage aep=PageFactory.initElements(driver,AddEmployeePage.class);
+		for(int i=1;i<=rowCount;i++)
+		{
+			Row r=ws.getRow(i);
+			menu.pim();
+			aep.addEmployee(r);
+		}
+	}
+
+}

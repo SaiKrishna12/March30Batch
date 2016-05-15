@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="On Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.orangrehrm.baseclass.AddEmployee">
+        <methods>
+          <include name="addEmpTest"/>
+        </methods>
+      </class> <!-- com.orangrehrm.baseclass.AddEmployee -->
+      <class name="com.orangrehrm.baseclass.TakingScreenshot">
+        <methods>
+          <include name="screenshotTest"/>
+        </methods>
+      </class> <!-- com.orangrehrm.baseclass.TakingScreenshot -->
+    </classes>
+  </test> <!-- On Chrome(failed) -->
+  <test name="On Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.orangrehrm.baseclass.AddEmployee">
+        <methods>
+          <include name="addEmpTest"/>
+        </methods>
+      </class> <!-- com.orangrehrm.baseclass.AddEmployee -->
+      <class name="com.orangrehrm.baseclass.Login">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.orangrehrm.baseclass.Login -->
+      <class name="com.orangrehrm.baseclass.TakingScreenshot">
+        <methods>
+          <include name="screenshotTest"/>
+        </methods>
+      </class> <!-- com.orangrehrm.baseclass.TakingScreenshot -->
+      <class name="com.orangrehrm.baseclass.Logout">
+        <methods>
+          <include name="logoutTest"/>
+        </methods>
+      </class> <!-- com.orangrehrm.baseclass.Logout -->
+    </classes>
+  </test> <!-- On Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->

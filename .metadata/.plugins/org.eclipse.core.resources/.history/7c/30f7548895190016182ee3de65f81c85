@@ -1,0 +1,18 @@
+package day29;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TabandPopupHandling {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		FirefoxDriver driver=new FirefoxDriver();
+		driver.get("http://bing.com");
+		driver.findElement(By.linkText("Help")).click();
+		driver.findElement(By.xpath("//*[@id='privacyLabel']")).click();
+	}
+
+}

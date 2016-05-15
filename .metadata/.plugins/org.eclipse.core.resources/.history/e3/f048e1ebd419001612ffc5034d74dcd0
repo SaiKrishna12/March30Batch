@@ -1,0 +1,18 @@
+package com.orangrehrm.baseclass;
+
+import org.openqa.selenium.server.browserlaunchers.Sleeper;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import com.orangrehrm.pageclasses.Menu;
+
+public class Logout  extends Constants{
+	@Test
+	public void logoutTest()
+	{
+		Menu menu=PageFactory.initElements(driver,Menu.class);
+		Sleeper.sleepTightInSeconds(4);
+		menu.logout();
+	}
+
+}

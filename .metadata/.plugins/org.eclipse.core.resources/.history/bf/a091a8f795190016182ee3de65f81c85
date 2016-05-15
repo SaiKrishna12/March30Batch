@@ -1,0 +1,29 @@
+package day29;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TabandPopupHandling {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		FirefoxDriver driver=new FirefoxDriver();
+		driver.get("http://bing.com");
+		driver.findElement(By.linkText("Help")).click();
+		Set<String> windowids=driver.getWindowHandles();
+		Iterator<String> it=windowids.iterator();
+		String x=it.next();
+		String y=it.next();
+		driver.switchTo().window(y);
+		
+		
+		
+		driver.findElement(By.xpath("//*[@id='privacyLabel']")).click();
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.orangrehrm.baseclass;
+
+import org.openqa.selenium.WebDriver;
+
+import com.orangrehrm.utilty.ExcelOperations;
+import com.orangrehrm.utilty.Screenshots;
+
+public class Constants {
+	
+	static WebDriver driver=null;
+	ExcelOperations eo=new ExcelOperations();
+	String empList="E:\\March30Batch\\OrangeHRM\\src\\com\\orangrehrm\\excelfiles\\EmployeeList.xlsx";
+	String location="E:\\March30Batch\\OrangeHRM\\src\\com\\orangrehrm\\screenshots\\";
+	Screenshots scr=new Screenshots();
+}

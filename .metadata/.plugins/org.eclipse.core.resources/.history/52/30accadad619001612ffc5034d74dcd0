@@ -1,0 +1,26 @@
+package com.orangrehrm.baseclass;
+
+import java.io.IOException;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.SkipException;
+import org.testng.annotations.Test;
+
+import com.orangrehrm.pageclasses.LoginPage;
+
+public class Login  extends Constants{
+	@Test
+	public void loginTest() throws IOException
+	{
+		driver=new FirefoxDriver();
+		driver.get("http://opensource.demo.orangehrm.com/index.php/dashboard");
+		LoginPage lp=PageFactory.initElements(driver,LoginPage.class);
+		String runMode=eo.getCellData(dataEngine, 0,1,2);
+		if(runMode.equals("N"))
+			throw new SkipException("Login Testcase skipped");
+		lp.loginPanel("Admin","admin");
+		
+	}
+
+}

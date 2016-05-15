@@ -1,0 +1,21 @@
+package com.orangrehrm.baseclass;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+
+import com.orangrehrm.pageclasses.LoginPage;
+
+public class Login  extends Constants{
+	@Test
+	public void loginTest()
+	{
+		driver=new FirefoxDriver();
+		driver.get("http://opensource.demo.orangehrm.com/index.php/dashboard");
+		LoginPage lp=PageFactory.initElements(driver,LoginPage.class);
+		eo.getCellData(path, sheetno, rowno, cellno)
+		lp.loginPanel("Admin","admin");
+		
+	}
+
+}
